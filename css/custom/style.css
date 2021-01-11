@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background: blueviolet;
+    color: white;
+    display: flex;
+    font-family: 'san-serif';
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    margin-bottom: 100px;
+}
+
+h1 {
+    font-size: 40px;
+    font-family: 'Pacifico', 'cursive', 'sans-serif';
+}
+
+.search-container {
+    width: 80vw;
+    max-width: 800px;
+    text-align: center;
+}
+
+.search{
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 0px;
+    border-radius: 3px;
+}
+
+.post{
+    position: relative;
+    background-color: #444;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .5);
+    border-radius: 3px;
+    padding: 20px;
+    width: 80vw;
+    max-width: 800px;
+    margin: 3rem 0;
+}
+
+.post .post-number {
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    color: #444;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.post .post-info {
+    margin-left: 20px;
+}
+
+.post .post-body {
+    margin: 15px 0;
+    line-height: 1.5;
+}
+
+.loader{
+    opacity: 0;
+    display: flex;
+    position: fixed;
+    bottom: 50px;
+    left:50%;
+    transition: opacity .3s ease-in;
+}
+
+.loader.show{
+    opacity: 1;
+}
+
+.circle{
+    background-color: white;
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+    border-radius: 50%;
+    animation: bounce .5s ease-in infinite;
+}
+
+.circle:nth-of-type(2){
+    animation-delay: .1s;
+}
+.circle:nth-of-type(3){
+    animation-delay: .2s;
+}
+
+@keyframes bounce{
+    0%,100%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+}
