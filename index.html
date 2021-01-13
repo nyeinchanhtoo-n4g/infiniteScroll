@@ -1,24 +1,87 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Infinite Scorll Project</title>
+    <title>Infinite Scroll (Thomas Studio JS Batch-2)</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Nyein Chan Htoo">
+    <!-- Custom Favicon -->
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="./css/custom/style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
+
 <body>
-    <h1>Blog Infinite Scroll Porject</h1>
-    <div class="search-container">
-        <input type="text" class="search" id="searchIn" placeholder="Search Post">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #a02225;">
+            <a class="navbar-brand" href="/">NCH-MM-DEV</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#whenSmallDevicecToggel"
+                aria-controls="whenSmallDevicecToggel" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="whenSmallDevicecToggel">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <div class="input-group">
+                        <span class="input-group-text mr-1"><i class="fas fa-search"></i></span>
+                        <input type="text" class="form-control" id="searchIn" placeholder="Search">
+                    </div>
+                </form>
+            </div>
+        </nav>
+        <!-- Body Content Start -->
+        
+
+        <div class="header-title my-2 py-5">
+            <h5 class="text-center text-white"> Blog Post Scroll Porject </h5>
+        </div>
+        <div id="post-block" class="col-md-12 col-12">
+            <!-- Post Section -->
+        </div>
+        <!-- Loading Section Start -->
+        <div class="loadingSection">
+            <div class="loadingBall"></div>
+            <div class="loadingBall"></div>
+            <div class="loadingBall"></div>
+            <div class="loadingBall"></div>
+        </div>
+        <!-- Loading Section End -->
+        <!-- Body Content End -->
     </div>
-    <div id="post-container">
-        <div class="loader">
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
+    <div class="container fixed-bottom">
+        <div class="text-center text-white mt-2 py-3" style="background-color: #a02225;">
+                <!-- COPYRIGHT -->
+                <span>Copyright &copy; 2021 NCH-DEV-MM, All right Reserved.</span>
+                <!-- CPOYRIGHT -->
         </div>
     </div>
 
+    <!-- Optional JavaScript -->
     <script src="./js/main.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
 </body>
+
 </html>
